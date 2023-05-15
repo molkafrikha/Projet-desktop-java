@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.Connexion3A17.gui.Details_adminController">
+   <children>
+      <TableView fx:id="tabad" layoutX="219.0" layoutY="79.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="nb_placead" prefWidth="75.0" text="nb_place" />
+          <TableColumn fx:id="date_ad" prefWidth="75.0" text="date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="sjt" layoutX="42.0" layoutY="115.0" onInputMethodTextChanged="#afficherD" />
+      <Button fx:id="afficher" layoutX="91.0" layoutY="200.0" mnemonicParsing="false" onAction="#afficher" text="Button" />
+   </children>
+</AnchorPane>

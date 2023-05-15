@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="778.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fithnitek.gui.CompteController">
+   <children>
+    <Label layoutX="430.0" layoutY="135.0" text="Last name" textFill="#b80eb8">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Label>
+      <Label layoutX="430.0" layoutY="205.0" text="Name" textFill="#b80eb8">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font></Label>
+      <TextField fx:id="resNom" editable="false" layoutX="630.0" layoutY="132.0" prefHeight="46.0" prefWidth="193.0" />
+      <TextField fx:id="resPrenom" editable="false" layoutX="630.0" layoutY="202.0" prefHeight="46.0" prefWidth="193.0" />
+      <VBox layoutX="-15.0" layoutY="214.0" prefHeight="200.0" prefWidth="100.0" />
+      <Label layoutX="565.0" layoutY="39.0" prefHeight="46.0" prefWidth="308.0" text="Welcome to your account !" textFill="#e87a0c">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="281.0" text="Login" textFill="#b80eb8">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="resLogin" layoutX="630.0" layoutY="278.0" prefHeight="46.0" prefWidth="193.0" />
+      <TextField fx:id="resPassowrd" layoutX="630.0" layoutY="360.0" prefHeight="46.0" prefWidth="193.0" />
+      <Label layoutX="417.0" layoutY="363.0" text="Password" textFill="#b80eb8">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-3.0" layoutY="-2.0" prefHeight="809.0" prefWidth="278.0" style="-fx-background-color: #7035a1;">
+         <children>
+            <Button id="sond" fx:id="sond" layoutX="43.0" layoutY="632.0" mnemonicParsing="false" onAction="#sondage" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Sondage" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button id="oc" fx:id="oc" layoutX="34.0" layoutY="170.0" mnemonicParsing="false" onAction="#offreo_view" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Offrecovoiturage" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button id="reser" fx:id="transport_btn" layoutX="34.0" layoutY="227.0" mnemonicParsing="false" onAction="#reservation" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Réservation" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button fx:id="eventbtn" layoutX="34.0" layoutY="298.0" mnemonicParsing="false" onAction="#toEvent" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text=" Evènement" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button id="rec" fx:id="rec" layoutX="39.0" layoutY="368.0" mnemonicParsing="false" onAction="#reclam" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Réclamation" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button fx:id="prod_btn" layoutX="39.0" layoutY="429.0" mnemonicParsing="false" onAction="#aviss" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Gérer Avis" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button fx:id="cmd_btn" layoutX="39.0" layoutY="497.0" mnemonicParsing="false" onAction="#tovoiture" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Voiture" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <Button fx:id="forum_btn" layoutX="39.0" layoutY="564.0" mnemonicParsing="false" onAction="#tomaintenance" prefHeight="37.0" prefWidth="193.0" style="-fx-background-color: #e87a0c;" text="Maintenance" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="7.5" left="7.5" right="7.5" top="7.5" />
+               </padding>
+            </Button>
+            <ImageView fitHeight="137.0" fitWidth="236.0" layoutX="24.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Capture_d_écran_2023-01-28_163629-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="dec" layoutX="88.0" layoutY="694.0" mnemonicParsing="false" onAction="#idDec" text="Deconnecter" />
+         </children>
+      </AnchorPane>
+   </children>  
+</AnchorPane>

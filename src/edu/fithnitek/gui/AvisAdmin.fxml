@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fithnitek.gui.AvisAdminController">
+   <children>
+      <AnchorPane fx:id="id" layoutY="-11.0" prefHeight="725.0" prefWidth="207.0" style="-fx-background-color: #7035a1;">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="144.0" layoutX="42.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="listU" layoutX="36.0" layoutY="184.0" mnemonicParsing="false" onAction="#listut" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #fd8735;" text="Liste utilisateur " />
+            <ImageView fitHeight="104.0" fitWidth="174.0" layoutX="39.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#7035a1" layoutX="474.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Avis" wrappingWidth="157.0000006556511">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="262.0" layoutY="120.0" prefHeight="444.0" prefWidth="658.0">
+         <columns>
+            <TableColumn fx:id="tab_id" prefWidth="101.0" text="ID" />
+            <TableColumn fx:id="tab_commentaire" minWidth="0.0" prefWidth="556.0" text="commentaire" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="91.0" fitWidth="120.0" layoutX="830.0" layoutY="574.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/voiture.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

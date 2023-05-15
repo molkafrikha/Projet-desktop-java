@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fithnitek.gui.UserResController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="combNP" layoutX="10.0" layoutY="10.0" prefHeight="642.0" prefWidth="990.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Label layoutX="422.0" layoutY="221.0" text="lieuA">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="217.0" prefHeight="25.0" prefWidth="30.0" text="lieuD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lieua" layoutX="469.0" layoutY="217.0" prefHeight="17.0" prefWidth="72.0" />
+            <TextField fx:id="tflieud" layoutX="337.0" layoutY="217.0" prefHeight="25.0" prefWidth="78.0" />
+            <Button fx:id="btnValider" layoutX="312.0" layoutY="507.0" mnemonicParsing="false" onAction="#ajouteRe" prefHeight="25.0" prefWidth="130.0" text="réserver" />
+            <Button fx:id="btnUpdate" layoutX="488.0" layoutY="506.0" mnemonicParsing="false" onAction="#updateRe" prefHeight="28.0" prefWidth="130.0" text="modifié" />
+            <Button fx:id="btndelete" layoutX="676.0" layoutY="507.0" mnemonicParsing="false" onAction="#deleteRe" prefHeight="25.0" prefWidth="130.0" text="annuler " />
+            <TableView fx:id="tableuser" layoutX="321.0" layoutY="264.0" prefHeight="200.0" prefWidth="559.0">
+               <columns>
+                  <TableColumn fx:id="colD" prefWidth="132.0" text="lieu de départ" />
+                  <TableColumn fx:id="colA" prefWidth="124.0" text="lieu d'arrivé" />
+                  <TableColumn fx:id="colnbplace" prefWidth="141.0" text="nombre de place" />
+                  <TableColumn fx:id="coldate" prefWidth="161.0" text="date" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="-18.0" layoutY="-2.0" prefHeight="670.0" prefWidth="240.0" style="-fx-background-color: #7035a1;">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="163.0" fitWidth="239.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/324384817_3191076247814358_6963662008871323400_n.png" />
+                           </image>
+                        </ImageView>
+                        <HBox prefHeight="55.0" prefWidth="259.0">
+                           <children>
+                              <Button fx:id="cmpt" mnemonicParsing="false" onAction="#comptee" prefHeight="31.0" prefWidth="237.0" style="-fx-background-color: fd8735;" text="Compte" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox layoutY="317.0" prefHeight="55.0" prefWidth="259.0">
+                     <children>
+                        <HBox prefHeight="55.0" prefWidth="259.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="237.0" style="-fx-background-color: fd8735;" text="Sondage" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutY="372.0" prefHeight="55.0" prefWidth="259.0" />
+                  <HBox layoutY="427.0" prefHeight="55.0" prefWidth="259.0" />
+                  <HBox layoutY="491.0" prefHeight="55.0" prefWidth="259.0" />
+                  <HBox layoutX="7.0" layoutY="546.0" prefHeight="37.0" prefWidth="259.0" />
+                  <HBox prefHeight="55.0" prefWidth="259.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="558.0" layoutY="221.0" text="nbplace" />
+            <Label layoutX="750.0" layoutY="221.0" text="date" />
+            <Label layoutX="415.0" layoutY="38.0" text="Demande covoiturage">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnChercher" layoutX="405.0" layoutY="146.0" mnemonicParsing="false" onAction="#chercher" prefHeight="25.0" prefWidth="106.0" text="Chercher" />
+            <ComboBox fx:id="combnp" layoutX="617.0" layoutY="217.0" prefHeight="25.0" prefWidth="106.0" />
+            <DatePicker fx:id="date" layoutX="789.0" layoutY="217.0" prefHeight="25.0" prefWidth="159.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="1291.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.fithnitek.gui.BienController">
+   <children>
+      <Label layoutX="76.0" layoutY="65.0" />
+      <DatePicker fx:id="dated" layoutX="328.0" layoutY="142.0" promptText="date de depart" />
+      <Button fx:id="b_ajouter" layoutX="328.0" layoutY="470.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff9a13;" text="Ajouter" />
+      <Button fx:id="b_modifier" layoutX="328.0" layoutY="521.0" mnemonicParsing="false" onAction="#updateBien" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff9a13;" text="Modifier" />
+      <Button fx:id="b_supprimer" layoutX="328.0" layoutY="572.0" mnemonicParsing="false" onAction="#deleteBien" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #ff9a13;" text="Supprimer" />
+      <TextField fx:id="lieud" layoutX="328.0" layoutY="60.0" promptText="lieu de depart:" />
+      <TextField fx:id="lieua" layoutX="328.0" layoutY="101.0" promptText="lieu d'arriver:" />
+      <TextField fx:id="num" layoutX="328.0" layoutY="198.0" promptText="numero telephone" />
+      <TableView fx:id="table" layoutX="546.0" layoutY="57.0" prefHeight="558.0" prefWidth="788.0">
+         <columns>
+            <TableColumn fx:id="tdepart" prefWidth="141.0" text="lieu de depart" />
+            <TableColumn fx:id="tarriver" prefWidth="201.0" text="lieu d'arriver" />
+            <TableColumn fx:id="tdate" prefWidth="184.0" text="date de depart" />
+            <TableColumn fx:id="tnum" prefWidth="261.0" text="numero de telephone" />
+         </columns>
+      </TableView>
+      <AnchorPane prefHeight="671.0" prefWidth="310.0" style="-fx-background-color: #7035a1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1106.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="241.0" layoutX="24.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="554.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="44.643524169921875" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../../../../../../../Desktop/324384817_3191076247814358_6963662008871323400_n.png" />
+               </image>
+            </ImageView>
+            
+            <Button fx:id="b2_offre" layoutX="46.0" layoutY="220.0" mnemonicParsing="false" onAction="#offre" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Offre Covoiturage" />
+            <Button fx:id="b2_bien" layoutX="46.0" layoutY="279.0" mnemonicParsing="false" onAction="#bien" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Transport du bien" />
+            <Button fx:id="b_compte" layoutX="46.0" layoutY="161.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Compte" />
+            <Button fx:id="b_maintenace" layoutX="48.0" layoutY="566.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Maitenance" />
+            <Button fx:id="b_reclamation" layoutX="46.0" layoutY="616.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Reclamation" />
+            <Button fx:id="b_voiture" layoutX="48.0" layoutY="510.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Voiture" />
+            <Button fx:id="b_evenement" layoutX="48.0" layoutY="455.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Gérer Evènement" />
+            <Button fx:id="b_sondage" layoutX="46.0" layoutY="397.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Sondage" />
+            <Button fx:id="b_reserver" layoutX="48.0" layoutY="337.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Reserver Covoiturage" />
+            <Button layoutX="46.0" layoutY="667.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="176.0" style="-fx-background-color: #ff9a13;" text="Avis" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
